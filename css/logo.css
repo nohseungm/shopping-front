@@ -1,0 +1,17 @@
+
+/* 로고 컴포넌트 스타일 */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결제 - Mini Shop</title>
+  <!-- 스타일시트 불러오기 -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pay.css">
+  <link rel="stylesheet" href="css/logo.css">
+</head>
+<body>
+  <!-- 상단 헤더 영역 -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Clothing Shop 로고">
+      <span>CLOTHING SHOP</span>
+    </div>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="#" onclick="location.href='index.html#liked';">찜한 상품</a>
+      <a href="cart.html">장바구니</a>
+      <a href="pay.html">결제</a>
+    </nav>
+  </header>
+
+  <!-- 결제 입력 및 요약 영역 -->
+  <main style="padding: 40px 80px;">
+    <h2 style="margin-bottom: 24px;">결제 정보</h2>
+
+    <div class="pay-layout">
+      <!-- 사용자 정보 입력 폼 -->
+      <form id="checkout-form" style="margin-top: 20px; display: flex; flex-direction: column; gap: 16px; max-width: 400px;">
+        <input type="text" placeholder="이름" required>
+        <input type="text" placeholder="주소" required>
+        <input type="tel" placeholder="전화번호" required>
+        <select required>
+          <option value="">결제 수단 선택</option>
+          <option value="card">신용카드</option>
+          <option value="bank">무통장입금</option>
+          <option value="kakaopay">카카오페이</option>
+        </select>
+        <button type="submit">결제하기</button>
+      </form>
+
+      <!-- 결제 요약 및 영수증 출력 -->
+      <div class="summary-box">
+        <div id="order-summary"></div>
+        <div id="receipt-box"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 하단 정보 표시 -->
+  <footer>
+    <p> CLOTHING SHOP | 고객센터: 1234-5678 | 이메일: help@ClothingShop.kr</p>
+  </footer>
+
+  <!-- 결제 스크립트 연결 -->
+  <script src="js/pay.js"></script>
+</body>
+</html>

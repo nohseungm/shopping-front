@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 기본 스타일과 폰트 설정 -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/logo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 상단 메뉴바: 로고와 주요 메뉴 링크들을 포함 -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Clothing Shop 로고">
+      <span>CLOTHING SHOP</span>
+    </div>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="#" onclick="showLikedProducts()">찜한 상품</a>
+      <a href="cart.html">장바구니</a>
+      <a href="pay.html">결제</a>
+    </nav>
+  </header>
+
+  <!-- 첫 화면에 보이는 홍보용 배너 부분 -->
+  <section class="hero" id="hero">
+    <h1>당신의 스타일을 완성할 단 하나.</h1>
+    <p>2025 S/S 컬렉션 출시</p>
+  </section>
+
+  <!-- 카테고리 필터 버튼들 (티셔츠, 청바지 등 선택 가능) -->
+  <section class="filters" id="filters">
+    <button onclick="filterCategory('all')">전체</button>
+    <button onclick="filterCategory('티셔츠')">티셔츠</button>
+    <button onclick="filterCategory('청바지')">청바지</button>
+    <button onclick="filterCategory('아우터')">아우터</button>
+    <button onclick="filterCategory('슬랙스')">슬랙스</button>
+  </section>
+
+  <!-- JS로 생성되는 상품 카드들이 표시되는 메인 영역 -->
+  <main>
+    <section class="product-grid" id="product-list">
+      <!-- 자바스크립트에서 상품 목록을 동적으로 생성 -->
+    </section>
+  </main>
+
+  <!-- 사이트 하단 정보 표시 (고객센터, 이메일 등) -->
+  <footer>
+    <p> CLOTHING SHOP | 고객센터: 1234-5678 | 이메일: help@ClothingShop.kr</p>
+  </footer>
+
+  <!-- 자바스크립트 파일 연결 -->
+  <script src="js/script.js"></script>
+</body>
+</html>

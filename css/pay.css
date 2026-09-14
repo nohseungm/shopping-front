@@ -1,0 +1,79 @@
+
+/* 결제 입력 폼 요소 */
+#checkout-form input,
+#checkout-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+#checkout-form button {
+  background-color: #111;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+#checkout-form button:hover {
+  background-color: #333;
+}
+
+
+/* 결제 요약 및 영수증 */
+#order-summary p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+#order-summary strong {
+  font-size: 17px;
+  color: #222;
+}
+
+#receipt-box {
+  border: 1px dashed #999;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#receipt-box h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+
+/* 레이아웃 정렬 */
+.pay-layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#checkout-form {
+  flex: 1;
+}
+
+.summary-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+/* 결제 내 상품 이미지 (선택 적용) */
+
+.product-card img {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 12px;
+  display: block;
+  border-radius: 6px;
+}
